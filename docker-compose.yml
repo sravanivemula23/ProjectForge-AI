@@ -1,0 +1,37 @@
+# React/Vite (5173)  ->  Express API (8000)  ->  MongoDB Atlas Local (27017, includes Atlas Vector Search)
+# Containers talk to each other by SERVICE NAME (mongo, backend). The browser only talks to the frontend;
+# the Vite dev server proxies /api to http://backend:8000, so there is no CORS problem and no localhost inside containers.
+services:
+  mongo:
+    image: mongodb/mongodb-atlas-local:latest
+    ports: ["27017:27017"]
+    volumes:
+      - mongo_data:/data/db
+      - mongo_config:/data/configdb
+
+  backend:
+    build: ./backend
+    env_file:
+      - path: .env          # optional: copy .env.example to .env to add AI / search keys
+        required: false
+    environment:
+      NODE_ENV: development
+      PORT: "8000"
+      MONGODB_URI: mongodb://mongo:27017/projectforge?directConnection=true
+      CORS_ORIGINS: http://localhost:5173
+    depends_on:
+      mongo:
+        condition: service_healthy
+    ports: ["8000:8000"]
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    environment:
+      API_PROXY_TARGET: http://backend:8000
+    depends_on: [backend]
+    ports: ["5173:5173"]
+
+volumes:
+  mongo_data:
+  mongo_config:

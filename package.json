@@ -1,0 +1,12 @@
+{
+  "name": "projectforge-ai",
+  "private": true,
+  "description": "ProjectForge AI - MERN stack",
+  "scripts": {
+    "setup": "npm --prefix backend install && npm --prefix frontend install && npm install",
+    "dev": "concurrently -n api,web -c cyan,magenta \"npm --prefix backend run dev:local\" \"npm --prefix frontend run dev\"",
+    "test": "npm --prefix backend test && npm --prefix frontend test",
+    "docker": "docker compose up --build"
+  },
+  "devDependencies": { "concurrently": "^9.1.0" }
+}

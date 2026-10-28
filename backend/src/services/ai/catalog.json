@@ -1,0 +1,625 @@
+[
+ {
+  "title": "Explainable Multi-Fracture Detection from X-rays with Vision Transformers",
+  "short_description": "Detects and localises fractures across body regions and explains predictions with attention maps.",
+  "problem_statement": "Radiologists in busy clinics miss subtle fractures and trust opaque models poorly.",
+  "target_users": [
+   "Radiologists",
+   "Orthopaedic clinics",
+   "Medical students"
+  ],
+  "domain": "Healthcare",
+  "difficulty": "advanced",
+  "estimated_weeks": 16,
+  "required_skills": [
+   "Python",
+   "PyTorch",
+   "Computer Vision"
+  ],
+  "technologies": [
+   "PyTorch",
+   "FastAPI",
+   "React",
+   "Docker",
+   "PostgreSQL"
+  ],
+  "ai_ml_components": [
+   "Vision Transformer",
+   "Attention/Grad-CAM explanations",
+   "Severity estimation"
+  ],
+  "modules": [
+   "Data ingestion",
+   "Model training",
+   "Explainability viewer",
+   "Clinician review UI",
+   "Reporting API"
+  ],
+  "expected_output": "Web app returning fracture type, location and heatmap.",
+  "deployment_options": [
+   "Cloud API",
+   "On-prem Docker"
+  ],
+  "estimated_cost_usd": 40,
+  "hardware_required": [],
+  "innovation_opportunities": [
+   "Multi-fracture classification",
+   "Explainable AI",
+   "Anatomical region detection",
+   "Severity grading",
+   "Uncertainty estimates"
+  ],
+  "career_relevance_note": "",
+  "research_potential_note": ""
+ },
+ {
+  "title": "Smart Attendance and Engagement Analytics Platform",
+  "short_description": "Face-recognition attendance plus privacy-preserving engagement analytics for lectures.",
+  "problem_statement": "Manual attendance wastes class time and gives teachers no insight into engagement.",
+  "target_users": [
+   "Teachers",
+   "Institutions"
+  ],
+  "domain": "Education",
+  "difficulty": "intermediate",
+  "estimated_weeks": 12,
+  "required_skills": [
+   "Python",
+   "React",
+   "SQL"
+  ],
+  "technologies": [
+   "FastAPI",
+   "React",
+   "OpenCV",
+   "PostgreSQL",
+   "Docker"
+  ],
+  "ai_ml_components": [
+   "Face recognition",
+   "Engagement scoring"
+  ],
+  "modules": [
+   "Enrollment",
+   "Recognition service",
+   "Analytics dashboard",
+   "Admin & consent management"
+  ],
+  "expected_output": "Dashboard with attendance and engagement trends.",
+  "deployment_options": [
+   "Cloud",
+   "Campus server"
+  ],
+  "estimated_cost_usd": 20,
+  "hardware_required": [
+   "Webcam"
+  ],
+  "innovation_opportunities": [
+   "On-device privacy-preserving recognition",
+   "Engagement trends",
+   "Early drop-out alerts",
+   "Consent-first design"
+  ],
+  "career_relevance_note": "",
+  "research_potential_note": ""
+ },
+ {
+  "title": "Crop Disease Detection and Advisory App for Smallholder Farmers",
+  "short_description": "Mobile-first app that identifies leaf diseases offline and gives localised treatment advice.",
+  "problem_statement": "Farmers lack timely access to agronomists and reliable internet.",
+  "target_users": [
+   "Smallholder farmers",
+   "Agri extension officers"
+  ],
+  "domain": "Agriculture",
+  "difficulty": "intermediate",
+  "estimated_weeks": 14,
+  "required_skills": [
+   "Python",
+   "TensorFlow",
+   "Mobile"
+  ],
+  "technologies": [
+   "TensorFlow Lite",
+   "Flutter",
+   "FastAPI",
+   "PostgreSQL"
+  ],
+  "ai_ml_components": [
+   "Lightweight CNN",
+   "On-device inference",
+   "RAG advisory"
+  ],
+  "modules": [
+   "Image capture",
+   "On-device classifier",
+   "Advisory engine",
+   "Offline sync",
+   "Regional language UI"
+  ],
+  "expected_output": "Mobile app with diagnosis and advice in local language.",
+  "deployment_options": [
+   "Android app",
+   "Cloud API"
+  ],
+  "estimated_cost_usd": 15,
+  "hardware_required": [],
+  "innovation_opportunities": [
+   "Offline-first inference",
+   "Regional languages",
+   "Severity estimation",
+   "Community outbreak map"
+  ],
+  "career_relevance_note": "",
+  "research_potential_note": ""
+ },
+ {
+  "title": "LLM-Assisted Security Log Anomaly Triage",
+  "short_description": "Detects anomalous log sequences and explains them to analysts in plain language.",
+  "problem_statement": "SOC analysts drown in alerts and spend time on false positives.",
+  "target_users": [
+   "SOC analysts",
+   "Small IT teams"
+  ],
+  "domain": "Cybersecurity",
+  "difficulty": "advanced",
+  "estimated_weeks": 14,
+  "required_skills": [
+   "Python",
+   "Security",
+   "ML"
+  ],
+  "technologies": [
+   "FastAPI",
+   "PostgreSQL",
+   "scikit-learn",
+   "React",
+   "Docker"
+  ],
+  "ai_ml_components": [
+   "Sequence anomaly detection",
+   "LLM alert explanation"
+  ],
+  "modules": [
+   "Log ingestion",
+   "Detector",
+   "Explanation service",
+   "Analyst feedback loop",
+   "Dashboard"
+  ],
+  "expected_output": "Triage dashboard with ranked, explained alerts.",
+  "deployment_options": [
+   "Docker",
+   "Cloud"
+  ],
+  "estimated_cost_usd": 25,
+  "hardware_required": [],
+  "innovation_opportunities": [
+   "Analyst feedback learning",
+   "Explainable alerts",
+   "MITRE ATT&CK mapping",
+   "Drift monitoring"
+  ],
+  "career_relevance_note": "",
+  "research_potential_note": ""
+ },
+ {
+  "title": "Edge-AI Soil and Irrigation Monitor",
+  "short_description": "ESP32 sensor nodes plus a lightweight model recommending irrigation schedules.",
+  "problem_statement": "Over/under-watering wastes water and lowers yield.",
+  "target_users": [
+   "Farmers",
+   "Greenhouse operators"
+  ],
+  "domain": "IoT",
+  "difficulty": "intermediate",
+  "estimated_weeks": 12,
+  "required_skills": [
+   "Embedded C",
+   "Python",
+   "MQTT"
+  ],
+  "technologies": [
+   "ESP32",
+   "MQTT",
+   "FastAPI",
+   "PostgreSQL",
+   "React"
+  ],
+  "ai_ml_components": [
+   "Time-series forecasting",
+   "Edge inference"
+  ],
+  "modules": [
+   "Sensor firmware",
+   "MQTT broker",
+   "Forecasting service",
+   "Dashboard",
+   "Alerts"
+  ],
+  "expected_output": "Live dashboard with irrigation recommendations.",
+  "deployment_options": [
+   "Edge + cloud"
+  ],
+  "estimated_cost_usd": 60,
+  "hardware_required": [
+   "ESP32",
+   "Soil sensor"
+  ],
+  "innovation_opportunities": [
+   "Weather-aware scheduling",
+   "Edge inference",
+   "Water-savings reporting"
+  ],
+  "career_relevance_note": "",
+  "research_potential_note": ""
+ },
+ {
+  "title": "Cloud Cost Optimisation Advisor with Anomaly Detection",
+  "short_description": "Analyses cloud billing exports and recommends right-sizing with anomaly alerts.",
+  "problem_statement": "Small teams overspend on cloud resources without noticing.",
+  "target_users": [
+   "Startups",
+   "DevOps engineers"
+  ],
+  "domain": "Cloud Computing",
+  "difficulty": "intermediate",
+  "estimated_weeks": 10,
+  "required_skills": [
+   "Python",
+   "AWS",
+   "SQL"
+  ],
+  "technologies": [
+   "FastAPI",
+   "PostgreSQL",
+   "AWS",
+   "Docker",
+   "React"
+  ],
+  "ai_ml_components": [
+   "Anomaly detection",
+   "Forecasting"
+  ],
+  "modules": [
+   "Billing importer",
+   "Anomaly engine",
+   "Recommendation engine",
+   "Dashboard"
+  ],
+  "expected_output": "Dashboard with savings recommendations.",
+  "deployment_options": [
+   "Cloud",
+   "Docker"
+  ],
+  "estimated_cost_usd": 10,
+  "hardware_required": [],
+  "innovation_opportunities": [
+   "Natural-language cost queries",
+   "Budget forecasting",
+   "Multi-cloud normalisation"
+  ],
+  "career_relevance_note": "",
+  "research_potential_note": ""
+ },
+ {
+  "title": "Personalised Learning Path Recommender with RAG Tutor",
+  "short_description": "Builds adaptive study plans and answers questions grounded in course material.",
+  "problem_statement": "One-size-fits-all curricula leave learners behind.",
+  "target_users": [
+   "Students",
+   "Self-learners"
+  ],
+  "domain": "Education",
+  "difficulty": "intermediate",
+  "estimated_weeks": 12,
+  "required_skills": [
+   "Python",
+   "React",
+   "NLP"
+  ],
+  "technologies": [
+   "FastAPI",
+   "pgvector",
+   "React",
+   "PostgreSQL",
+   "LLM API"
+  ],
+  "ai_ml_components": [
+   "Embeddings",
+   "RAG",
+   "Knowledge tracing"
+  ],
+  "modules": [
+   "Content ingestion",
+   "Vector search",
+   "Tutor chat",
+   "Progress tracker"
+  ],
+  "expected_output": "Web app with study plans and cited answers.",
+  "deployment_options": [
+   "Cloud"
+  ],
+  "estimated_cost_usd": 20,
+  "hardware_required": [],
+  "innovation_opportunities": [
+   "Citations to source passages",
+   "Knowledge tracing",
+   "Spaced repetition"
+  ],
+  "career_relevance_note": "",
+  "research_potential_note": ""
+ },
+ {
+  "title": "Fraud-Resistant Peer-to-Peer Expense Splitting with Anomaly Scoring",
+  "short_description": "Group expense app with anomaly scoring for suspicious entries and receipts OCR.",
+  "problem_statement": "Shared expense tools lack validation, causing disputes.",
+  "target_users": [
+   "Roommates",
+   "Student groups"
+  ],
+  "domain": "FinTech",
+  "difficulty": "beginner",
+  "estimated_weeks": 8,
+  "required_skills": [
+   "JavaScript",
+   "SQL"
+  ],
+  "technologies": [
+   "React",
+   "FastAPI",
+   "PostgreSQL",
+   "Tesseract OCR"
+  ],
+  "ai_ml_components": [
+   "OCR",
+   "Outlier detection"
+  ],
+  "modules": [
+   "Auth",
+   "Groups",
+   "Expenses",
+   "OCR receipts",
+   "Settlement"
+  ],
+  "expected_output": "Web app with settlements and flagged entries.",
+  "deployment_options": [
+   "Cloud"
+  ],
+  "estimated_cost_usd": 5,
+  "hardware_required": [],
+  "innovation_opportunities": [
+   "Receipt OCR",
+   "Anomaly flags",
+   "Fair settlement optimisation"
+  ],
+  "career_relevance_note": "",
+  "research_potential_note": ""
+ },
+ {
+  "title": "Multilingual Mental-Wellness Journaling Companion",
+  "short_description": "Private journaling app with sentiment trends and supportive, non-diagnostic reflections.",
+  "problem_statement": "Students need low-barrier reflection tools in their own language.",
+  "target_users": [
+   "Students"
+  ],
+  "domain": "NLP",
+  "difficulty": "intermediate",
+  "estimated_weeks": 10,
+  "required_skills": [
+   "Python",
+   "NLP",
+   "React"
+  ],
+  "technologies": [
+   "FastAPI",
+   "Transformers",
+   "React",
+   "PostgreSQL"
+  ],
+  "ai_ml_components": [
+   "Multilingual sentiment",
+   "Topic modelling"
+  ],
+  "modules": [
+   "Journal",
+   "Sentiment engine",
+   "Trends",
+   "Safety guardrails"
+  ],
+  "expected_output": "Web app with private trends and safety messaging.",
+  "deployment_options": [
+   "Cloud"
+  ],
+  "estimated_cost_usd": 10,
+  "hardware_required": [],
+  "innovation_opportunities": [
+   "On-device privacy",
+   "Code-mixed language support",
+   "Crisis-resource guardrails"
+  ],
+  "career_relevance_note": "",
+  "research_potential_note": ""
+ },
+ {
+  "title": "Carbon Footprint Tracker for Campuses with Forecasting",
+  "short_description": "Aggregates energy/transport data and forecasts emissions with reduction suggestions.",
+  "problem_statement": "Campuses lack simple tools to measure and reduce emissions.",
+  "target_users": [
+   "Campus sustainability teams"
+  ],
+  "domain": "Sustainability",
+  "difficulty": "beginner",
+  "estimated_weeks": 8,
+  "required_skills": [
+   "Python",
+   "SQL",
+   "React"
+  ],
+  "technologies": [
+   "FastAPI",
+   "PostgreSQL",
+   "React",
+   "Prophet"
+  ],
+  "ai_ml_components": [
+   "Time-series forecasting"
+  ],
+  "modules": [
+   "Data import",
+   "Emission calculator",
+   "Forecasts",
+   "Reports"
+  ],
+  "expected_output": "Dashboard with emissions and scenarios.",
+  "deployment_options": [
+   "Cloud"
+  ],
+  "estimated_cost_usd": 5,
+  "hardware_required": [],
+  "innovation_opportunities": [
+   "Scenario simulation",
+   "Gamified reduction goals"
+  ],
+  "career_relevance_note": "",
+  "research_potential_note": ""
+ },
+ {
+  "title": "Gesture-Controlled Assistive Robotic Arm",
+  "short_description": "Low-cost robotic arm controlled by hand gestures for people with limited mobility.",
+  "problem_statement": "Assistive devices are expensive and hard to customise.",
+  "target_users": [
+   "People with limited mobility",
+   "Rehab centres"
+  ],
+  "domain": "Robotics",
+  "difficulty": "advanced",
+  "estimated_weeks": 16,
+  "required_skills": [
+   "Python",
+   "Robotics",
+   "Computer Vision"
+  ],
+  "technologies": [
+   "ROS2",
+   "MediaPipe",
+   "Arduino",
+   "Python"
+  ],
+  "ai_ml_components": [
+   "Hand-pose estimation",
+   "Gesture classification"
+  ],
+  "modules": [
+   "Perception",
+   "Control",
+   "Safety layer",
+   "Calibration UI"
+  ],
+  "expected_output": "Working prototype arm and control software.",
+  "deployment_options": [
+   "Local hardware"
+  ],
+  "estimated_cost_usd": 120,
+  "hardware_required": [
+   "Robotic arm kit",
+   "Camera"
+  ],
+  "innovation_opportunities": [
+   "Personalised gesture sets",
+   "Safety-aware control"
+  ],
+  "career_relevance_note": "",
+  "research_potential_note": ""
+ },
+ {
+  "title": "Decentralised Academic Certificate Verification",
+  "short_description": "Issue and verify tamper-evident academic credentials with a simple verification API.",
+  "problem_statement": "Certificate fraud and slow manual verification.",
+  "target_users": [
+   "Universities",
+   "Employers"
+  ],
+  "domain": "Blockchain",
+  "difficulty": "intermediate",
+  "estimated_weeks": 10,
+  "required_skills": [
+   "Solidity",
+   "JavaScript",
+   "SQL"
+  ],
+  "technologies": [
+   "Solidity",
+   "React",
+   "FastAPI",
+   "PostgreSQL"
+  ],
+  "ai_ml_components": [],
+  "modules": [
+   "Issuer portal",
+   "Smart contract",
+   "Verification API",
+   "Verifier UI"
+  ],
+  "expected_output": "Web app with on-chain hashes and QR verification.",
+  "deployment_options": [
+   "Testnet",
+   "Cloud"
+  ],
+  "estimated_cost_usd": 10,
+  "hardware_required": [],
+  "innovation_opportunities": [
+   "Privacy-preserving selective disclosure",
+   "Revocation lists"
+  ],
+  "career_relevance_note": "",
+  "research_potential_note": ""
+ },
+ {
+  "title": "Real-Time Sign-Language Alphabet Translator",
+  "short_description": "Webcam app translating sign-language fingerspelling into text with feedback for learners.",
+  "problem_statement": "Communication barriers for deaf and hard-of-hearing users.",
+  "target_users": [
+   "Learners",
+   "Deaf community"
+  ],
+  "domain": "Computer Vision",
+  "difficulty": "beginner",
+  "estimated_weeks": 8,
+  "required_skills": [
+   "Python",
+   "OpenCV"
+  ],
+  "technologies": [
+   "MediaPipe",
+   "TensorFlow",
+   "React",
+   "FastAPI"
+  ],
+  "ai_ml_components": [
+   "Hand landmarks",
+   "Sequence classifier"
+  ],
+  "modules": [
+   "Capture",
+   "Landmark extraction",
+   "Classifier",
+   "Learner feedback UI"
+  ],
+  "expected_output": "Browser app with live translation.",
+  "deployment_options": [
+   "Web"
+  ],
+  "estimated_cost_usd": 5,
+  "hardware_required": [
+   "Webcam"
+  ],
+  "innovation_opportunities": [
+   "Learner feedback mode",
+   "Dialect variation",
+   "Word-level recognition"
+  ],
+  "career_relevance_note": "",
+  "research_potential_note": ""
+ }
+]
